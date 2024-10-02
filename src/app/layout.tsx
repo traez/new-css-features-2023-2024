@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased font-trebuchetMs flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow bg-[#F0FFFF]">{children}</main>
         <Footer />
       </body>
     </html>

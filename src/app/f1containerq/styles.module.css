@@ -1,3 +1,19 @@
-.backg {
-    background-color: yellow;
+
+.post {
+  container-type: inline-size;
+  container-name: sidebar;
+}
+
+/* Default heading styles for the card title */
+.card {
+  font-size: 1em;
+  background-color: yellow;
+}
+
+/* If the container is larger than 700px */
+@container sidebar (min-width: 600px) {
+  .card {
+    font-size: 2em;
+    background-color: rgb(0, 166, 255);
   }
+}
