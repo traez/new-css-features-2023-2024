@@ -1,11 +1,11 @@
 import styles from "./styles.module.css";
 
-export default function F2subgrid() {
+export default function F3hasrpseudoc() {
   return (
     <section className="py-4 px-8">
       <article className="bg-white shadow-md rounded-lg p-6 mb-6">
         <h1 className="text-2xl font-bold text-gray-800 mb-4 border-black border-b pb-2">
-          CSS Subgrid
+        :has() Relational Pseudo-class
         </h1>
 
         <div className={`${styles.grid} mb-6 `}>
