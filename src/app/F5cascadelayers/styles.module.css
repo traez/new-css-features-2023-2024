@@ -1,0 +1,16 @@
+@layer site, page;
+
+@layer page {
+  .heading {
+    text-decoration: overline;
+    color: red;
+  }
+}
+
+@layer site {
+  .heading {
+    text-decoration: underline;
+    color: green;
+  }
+}
+

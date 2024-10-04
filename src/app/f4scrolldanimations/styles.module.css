@@ -1,0 +1,55 @@
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.parallaxElement {
+  animation: fadeIn linear;
+  animation-timeline: scroll(root);
+  animation-range: 0 100%;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e6f2ff, #e6e6ff);
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cardGreen {
+  background-color: #e6ffe6;
+}
+
+.cardYellow {
+  background-color: #ffffe6;
+}
+
+.cardRed {
+  background-color: #ffe6e6;
+}

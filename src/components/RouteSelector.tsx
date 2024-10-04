@@ -6,7 +6,9 @@ const routes = [
   { path: "/", label: "Home" },
   { path: "/f1containerq", label: "F1 Container Queries" },
   { path: "/f2subgrid", label: "F2 Subgrid" },
-  { path: "/f3hasrpseudoc", label: ":has() Relational Pseudo-class" },
+  { path: "/f3hasrpseudoc", label: "F3 :has() Relational Pseudo-class" },
+  { path: "/f4scrolldanimations", label: "F4 Scroll-Driven Animations" },
+  { path: "/F5cascadelayers", label: "F5 Cascade Layers" },
 ];
 
 export default function RouteSelector() {
