@@ -10,7 +10,7 @@ export default function Home() {
         I built this as a practice app to learn and experiment with the latest cutting-edge CSS features from 2023 and 2024.
       </p>
       <p className="text-center">
-        Use the select button at the top to navigate and cycle through the different features, each presented in individual routes/pages.
+        Use the select option dropdown at the top-right to navigate and cycle through the different features, each presented in individual routes/pages.
       </p>
     </div>
   );
