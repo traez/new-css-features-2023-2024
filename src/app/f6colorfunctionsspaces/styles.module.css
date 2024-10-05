@@ -1,0 +1,34 @@
+/* ColorCard.module.css */
+
+ .section {
+  padding: 4px;
+  --background: #00aaff; /* Define the --background variable on the <section> element */
+} 
+
+.card {
+  border: 2px solid rgba(0, 128, 128, 0.8); /* Using RGBA function */
+  padding: 16px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--background) 40%, white 60%); /* Using color-mix with CSS variable */
+  box-shadow: 0 4px 12px hsla(210, 50%, 30%, 0.4); /* HSL with alpha */
+  color: lch(52.2345% 40 320); /* Using LCH color space */
+}
+
+.header {
+  color: lab(75% 20 -30); /* Using LAB color space */
+  background: color-contrast(var(--background), light, dark); /* Contrast */
+}
+
+.button {
+  background: hwb(205 0% 20%); /* Hue, Whiteness, Blackness */
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: var(--background) 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background: color-contrast(var(--background), light, dark);
+  color: rgba(255, 255, 255, 0.8);
+}

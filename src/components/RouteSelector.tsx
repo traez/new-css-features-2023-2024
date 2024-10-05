@@ -8,7 +8,8 @@ const routes = [
   { path: "/f2subgrid", label: "F2 Subgrid" },
   { path: "/f3hasrpseudoc", label: "F3 :has() Relational Pseudo-class" },
   { path: "/f4scrolldanimations", label: "F4 Scroll-Driven Animations" },
-  { path: "/F5cascadelayers", label: "F5 Cascade Layers" },
+  { path: "/f5cascadelayers", label: "F5 Cascade Layers" },
+  { path: "/f6colorfunctionsspaces", label: "F6 Color Functions and Color Spaces" },
 ];
 
 export default function RouteSelector() {
