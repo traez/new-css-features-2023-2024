@@ -1,6 +1,6 @@
-# Zeeofor Technologies Portfolio Website
+# New CSS Features 2023-2024
 
-My goal for creating a web developer portfolio website is to showcase my skills and projects in a visually appealing way. It serves as my personal branding platform, demonstrating my technical abilities and enhancing my online visibility. By reflecting my creativity and style, my portfolio helps me stand out in the competitive tech industry while facilitating networking through links to my social media profiles.
+To stay updated with new CSS features that became mainstream after I first learned CSS and that I am not familiar with. My intention is to learn these features So I can code more efficiently.
 
 ## Table of contents
 
@@ -20,7 +20,7 @@ My goal for creating a web developer portfolio website is to showcase my skills 
 
 ### The Challenge/User Stories
 
-- Visitors want to see my name and a brief introduction immediately on the homepage, read a short biography in the About Me section to understand my background, and view a grid of my projects with images and descriptions. They also want to click on a project for more in-depth information, see a clear list of my technical skills and proficiencies, and read testimonials to gauge my professionalism and reliability. Additionally, visitors want a simple contact form to reach out for inquiries or collaborations, receive a confirmation message after submitting the form, and enjoy a responsive design that looks good on both desktop and mobile devices. Lastly, they want links to my professional social media profiles for further connection and the option to switch between light and dark modes for personalization.   
+- Discuss each feature on a separate page, and navigate or route between them. Each page will include a definition, sample code, and an explanation of the sample code.
 
 ### Screenshot
 
@@ -28,8 +28,8 @@ My goal for creating a web developer portfolio website is to showcase my skills 
 
 ### Links
 
-- Solution URL: [https://github.com/traez/zeeofortech](https://github.com/traez/zeeofortech)
-- Live Site URL: [https://zeeofortech.vercel.app/](https://zeeofortech.vercel.app/)
+- Solution URL: [https://github.com/traez/new-css-features-2023-2024](https://github.com/traez/new-css-features-2023-2024)
+- Live Site URL: [https://new-css-features-2023-2024.vercel.app/](https://new-css-features-2023-2024.vercel.app/)
 
 ## My process
 
@@ -44,39 +44,19 @@ My goal for creating a web developer portfolio website is to showcase my skills 
 - Tailwind CSS
 - Typescript
 - Nodejs      
-- react-icons        
+- CSS Modules        
 
 ### What I learned
    
-- **Understanding -mx-4 in Tailwind CSS**  
-The class `-mx-4` in Tailwind CSS applies the following styles:  
-<blockquote>.-mx-4 {
-    margin-left: -1rem; /* -16px */
-    margin-right: -1rem; /* -16px */
-}</blockquote>  
-Instead of creating space between the container and the parent container, it allows the container to extend beyond the parent. This is a clever way to make the container width equal to that of the parent container.    
-
-- **Dynamic Copyright Year**  
-Using this ensures that the copyright year updates automatically each year: `© {new Date().getFullYear()}`  
-
-- **Efficient Dropdown Interaction with Tailwind CSS**  
-By leveraging Tailwind's utility classes, I created an efficient and visually appealing dropdown interaction. Here’s how to implement it:
-1) Use the group class on the parent element to enable hover effects on child elements.  
-2) Apply these classes to the dropdown container:  
-    * `invisible`: Hides the dropdown by default.  
-    * `group-hover:visible`: Shows the dropdown when the parent is hovered.  
-    * `opacity-0`: Makes the dropdown fully transparent initially.  
-    * `group-hover:opacity-100`: Makes the dropdown fully opaque on hover.  
-    * `transition-all duration-300`: Adds a smooth transition effect. 
-    
-The combination of visibility and opacity changes creates a fade-in effect when hovering. This technique provides a clean, CSS-only solution for dropdown menus without requiring JavaScript. 
-
-- **Markdown preview**  
-Using `Ctrl + Shift + V` in Visual Studio Code (VSCode) opens the Markdown preview for the currently active Markdown file, displaying its rendered content in a separate pane. This feature is built into VSCode by default, allowing for real-time updates as you edit the Markdown file, which means you can see how your formatting appears without needing to refresh manually.  
-You may also right click and select `"open preview"` option.  
-
-- **Implementing External Link Indicators**  
-I implemented external link indicators `(e.g., ↗️)` for links that navigate outside the site or open in a new tab. This is a common web convention that improves user experience by clearly signaling when users are leaving the current site. It enhances usability and accessibility, helping users make informed decisions about navigating external resources. This was an important design consideration to ensure transparency and a smoother browsing experience for users.
+- **Proper Use of module.css for Local CSS Scoping**  
+In my project, I used `module.css` for locally scoped CSS, ensuring that class names were specific to the component where they were defined. This allows me to reuse class names across different CSS files without conflicts, as each module's classes are scoped to the specific component they are applied to.  
+- **CSS Modules for Classes Only**  
+CSS Modules are specifically for class names. If you need to style HTML element tags (e.g., `h1`, `p`), those styles should be placed in a global CSS file, as they will apply globally across the entire project.  
+- **Combining Tailwind CSS with CSS Modules**  
+When using Tailwind CSS together with CSS Modules, you can combine class names by using template literals. This way, I can leverage the utility-first approach of Tailwind while also applying scoped styles from CSS Modules.
+`<div className={`${styles.grid} bg-blue-500 p-4`}>`  
+- **Referential Equality vs. Creating New Functions in Event Handlers**  
+Using `onChange={handleRouteChange}` is preferred in React components because it avoids creating a new function on every render. When you write `onChange={(e) => handleRouteChange(e)}`, a new inline function is created during each render, which can lead to unnecessary re-renders and increased memory usage. By sticking to the first approach, I ensure that referential equality is maintained, leading to better performance. 
 
 ### Continued development
 

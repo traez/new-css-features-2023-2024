@@ -13,7 +13,6 @@ const routes = [
   { path: "/f7nesting", label: "F7 Nesting" },
   { path: "/f8newcolorsystems", label: "F8 New Color Systems (LCH, LAB, HWB)" },
   { path: "/f9ispseudoclass", label: "F9 :is() Functional Pseudo-class" },
-  { path: "/f10focusvisiblepc", label: "F10 :focus-visible Pseudo-class" },
 ];
 
 export default function RouteSelector() {
