@@ -10,6 +10,10 @@ const routes = [
   { path: "/f4scrolldanimations", label: "F4 Scroll-Driven Animations" },
   { path: "/f5cascadelayers", label: "F5 Cascade Layers" },
   { path: "/f6colorfunctionsspaces", label: "F6 Color Functions and Color Spaces" },
+  { path: "/f7nesting", label: "F7 Nesting" },
+  { path: "/f8newcolorsystems", label: "F8 New Color Systems (LCH, LAB, HWB)" },
+  { path: "/f9ispseudoclass", label: "F9 :is() Functional Pseudo-class" },
+  { path: "/f10focusvisiblepc", label: "F10 :focus-visible Pseudo-class" },
 ];
 
 export default function RouteSelector() {
