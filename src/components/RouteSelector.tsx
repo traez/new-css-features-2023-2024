@@ -8,7 +8,7 @@ const routes = [
   { path: "/f2subgrid", label: "F2 Subgrid" },
   { path: "/f3hasrpseudoc", label: "F3 :has() Relational Pseudo-class" },
   { path: "/f4scrolldanimations", label: "F4 Scroll-Driven Animations" },
-  { path: "/f5cascadelayers", label: "F5 Cascade Layers" },
+  { path: "/f5-cascade-layers", label: "F5 Cascade Layers" },
   { path: "/f6colorfunctionsspaces", label: "F6 Color Functions and Color Spaces" },
   { path: "/f7nesting", label: "F7 Nesting" },
   { path: "/f8newcolorsystems", label: "F8 New Color Systems (LCH, LAB, HWB)" },
